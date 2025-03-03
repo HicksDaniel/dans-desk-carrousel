@@ -12,7 +12,7 @@ export const ProductList = [
   {
     name: "Xbox Elite Controller",
     id: 3,
-    image: "src/assets/images/XboxEliteController-Top.jpg",
+    image: "src/assets/images/XboxEliteController-Top.png",
   },
   {
     name: "G903",

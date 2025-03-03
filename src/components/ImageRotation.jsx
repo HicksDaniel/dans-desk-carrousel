@@ -17,25 +17,41 @@ export default function ImageRotator() {
   return (
     <>
       <div
+        className="rotator"
         onPointerDown={(e) => {
           handleRotation({ x: e.clientX, y: e.clientY });
         }}
         style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          justifyContent: "center",
-          width: "100%",
+          position: "relative",
+
+          // backgroundImage: `url(${image[0].image})`,
         }}
       >
-        <img style={{ width: "90%" }} src={image[0].image} />
+        <img
+          style={{
+            position: "absolute",
+            transform: "translate(-25px, 0px",
+            width: "125%",
+          }}
+          src={image[0].image}
+        />
+
         <input
-          style={{ width: "50%" }}
+          style={{
+            position: "absolute",
+            height: "100%",
+            width: "100%",
+            opacity: "0",
+          }}
           type="range"
           min={1}
           max={30}
           step="1"
-          onChange={(e) => setValue(e.target.valueAsNumber)}
+          onChange={(e) => {
+            console.log(e.target.value);
+
+            setValue(e.target.valueAsNumber);
+          }}
         />
       </div>
     </>

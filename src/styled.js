@@ -12,49 +12,44 @@ import {
 export const CustomBox = styled(Box)`
   display: flex;
   justify-content: center;
-  flex-direction: "row";
-  align-items: "center";
-  align-content: "center";
-  justify-content: "center";
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 200px;
+  height: 30%;
 `;
 
 export const Carrousel = styled.div`
   display: flex;
   background-color: transparent;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 85%;
+  width: 60%;
+  height: 100%;
   align-content: space-around;
 `;
 
 export const CustomCard = styled(Card)`
   &.MuiPaper-root {
     display: flex;
-    padding: 0;
-
-    height: 70%;
+    height: 100%;
+    width: 20%;
+    align-content: center;
+    justify-content: center;
     background: transparent;
   }
 `;
 export const CustomCardContent = styled(CardContent)`
   display: flex;
   height: 80%;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   margin: 2px;
-  margin-bottom: 0px;
-  padding: 0;
   flex-flow: column nowrap;
 
   & .image-container {
-    margin-top: -15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    margin-bottom: 0px;
+    height: 100%;
   }
 `;
 export const CustomTypography = styled(Typography)`

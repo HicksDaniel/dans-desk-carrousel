@@ -1,17 +1,7 @@
-.container {
-  display: flex;
-  height: 70vh;
-  width: 100vh;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background-color: #454545;
-}
 .display-container {
   display: flex;
-  width: 85%;
-  height: 72%;
+  width: 100vw;
+  height: 100vh;
   flex-flow: column nowrap;
   align-items: center;
   align-content: center;
@@ -19,29 +9,50 @@
 }
 
 .product-showcase {
-  display: relative;
+  position: relative;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 70%;
   overflow: hidden;
   width: 100%;
 }
 
 .product-image {
-  display: absolute;
-  transform: translate(100px, 40px);
+  position: absolute;
+
   overflow: hidden;
-  cursor: ew-resize;
+  transform: translate(500px, 150px);
+  background-size: cover;
+  background-position: 0px;
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
-.product-info {
-  display: absolute;
-  transform: translate(70px, -255px);
+
+.rotator {
+  display: flex;
+  cursor: ew-resize;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: left;
-  width: 25%;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 75%;
+}
+
+.product-information {
+  position: absolute;
+  transform: translate(350px, 300px);
+  justify-content: flex-end;
+  width: 15%;
+  height: 20%;
+  align-content: space-between;
+}
+
+.info-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .product-title {
@@ -50,12 +61,12 @@
   font-size: 16px;
   justify-content: space-between;
   margin-bottom: 1px;
-  width: 100%;
 }
 
 .product-description {
   margin-top: 0px;
   font-size: 12px;
+
   margin-bottom: 2px;
 }
 
